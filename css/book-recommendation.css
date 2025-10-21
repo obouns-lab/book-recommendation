@@ -1,0 +1,162 @@
+div {
+            border: 3px solid rgba(255, 0, 0, 0);          /* กรอบ div */
+            }
+.gray-background {
+    background-color: #c7c7c7; /* สีเทาอ่อน */
+}
+.top-text {
+    font-size: 28px;      /* หรือใช้ rem เช่น 1rem */
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bottom-text {
+    font-size: 32px;      /* ปรับขนาดใหญ่กว่าด้านบน */
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    text-indent: 2em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+h3 {
+    color: #8E372B;
+}
+p {
+  font-family: 'Sarabun', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Chonburi', cursive;
+}
+.card-box {
+  background-color: #ffffff;        /* พื้นหลังขาว */
+  border: 1.5px solid #cccccc;      /* กรอบสีเทาอ่อน ชัดเจน */
+  border-radius: 16px;               /* ขอบมน */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* เงานุ่ม */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 25px;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15); /* เงาเข้มขึ้นเมื่อ hover */
+}
+
+.card-box h5 {
+  font-family: 'Chonburi', cursive;
+  color: #222222; /* หัวข้อสีดำเข้ม */
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333333; /* ตัวอักษรสีเข้ม */
+}
+
+@media (max-width: 576px) {
+  .card-box {
+    padding: 20px;
+  }
+}
+.full-banner {
+  width: 100%;                    /* เต็มความกว้างจอ */
+  background-color: #fff3e0;      /* พื้นหลังสีอ่อนเด่น */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* เงานุ่ม */
+  padding: 40px 20px;             /* สูงและมี padding ซ้ายขวา */
+  color: #333;
+  font-family: 'Sarabun', sans-serif;
+  text-align: center;
+  border-radius: 0 0 16px 16px;   /* มุมล่างมน */
+  margin-top: -10px;               /* ชิดกับรูปภาพเล็กน้อย */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.full-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.full-banner h4 {
+  font-family: 'Chonburi', cursive;
+  color: #8E372B;  /* หัวข้อสีส้มเข้ม */
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.full-banner p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;  /* จัดข้อความกลาง */
+}
+
+@media (max-width: 576px) {
+  .full-banner {
+    padding: 30px 15px;
+  }
+
+  .full-banner h4 {
+    font-size: 1.3rem;
+  }
+
+  .full-banner p {
+    font-size: 1rem;
+  }
+}
+.magic-end-text {
+    color: #8B4513;           /* สีน้ำตาล SaddleBrown */
+    font-family: 'Chonburi', cursive;
+    font-size: 1.5rem;        /* ตัวใหญ่หน่อย */
+    font-weight: 600;         /* ตัวหนาเล็กน้อย */
+    text-align: center;       /* จัดกลาง */
+    line-height: 1.8;         /* อ่านง่าย */
+    margin: 0 auto;
+    max-width: 800px;         /* จำกัดความกว้าง */
+}
+#carouselExampleIndicators .carousel-inner img {
+    max-height: 1000px; /* เปลี่ยนตามที่ต้องการ เช่น 400px หรือ 600px */
+    width: 70%;       /* ให้เต็มความกว้าง */
+    object-fit: cover; /* ครอบเต็มพื้นที่ แต่ไม่บิดเบี้ยว */
+}
+.card-icon {
+    width: 60px;        /* ปรับขนาดไอคอนได้ที่นี่ */
+    height: 60px;
+    object-fit: contain; /* ให้ภาพเต็มกรอบโดยไม่บิด */
+    margin-bottom: 10px; /* เว้นระยะกับหัวข้อ */
+}
+.navbar-nav .nav-item {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.brand-text {
+  font-family: 'Henny Penny', cursive;
+  font-size: 1.8rem;
+  color: #8F362D;
+  margin-left: 5px;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.brand-text:hover {
+  color: #c49bff;
+  transform: scale(1.1);
+}
+.footer {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer .brand-text {
+  font-family: 'Henny Penny', cursive;
+  color: inherit; /* ใช้สีเดิมของข้อความ */
+}
+
+.footer .social-links a:hover {
+  color: #6f42c1; /* สีม่วงอ่อนตอน hover */
+}
