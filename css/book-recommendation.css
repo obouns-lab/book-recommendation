@@ -160,3 +160,111 @@ h1, h2, h3, h4, h5, h6 {
 .footer .social-links a:hover {
   color: #6f42c1; /* สีม่วงอ่อนตอน hover */
 }
+.image-source {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 1rem;          /* ขนาดเดียวกับเนื้อหาหลัก */
+  color: #555;              /* สีเทาอ่อนอ่านง่าย */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.image-source a {
+  color: #8E372B;           /* สีเดียวกับหัวข้อ */
+  text-decoration: none;
+}
+.image-source a:hover {
+  text-decoration: underline;
+  color: #b64b3b;           /* สีเข้มขึ้นเล็กน้อยตอน hover */
+}
+/* ===== About Us (เพิ่มใหม่) ===== */
+.about-hero{
+  background: linear-gradient(180deg,#fff3e0 0%, #ffffff 100%);
+  border-radius: 0 0 16px 16px;
+  padding: 40px 0 32px;
+}
+.about-hero h1{
+  font-family: 'Chonburi', cursive;
+  color: #8E372B;
+  font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.2rem);
+  margin-bottom: 6px;
+  text-indent: 0; /* กันย่อหน้า */
+}
+.about-hero p{
+  font-family: 'Sarabun', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  text-indent: 0;
+}
+
+.about-card{
+  background: #fff;
+  border: 1.5px solid #cccccc;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.avatar-round{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8E372B;
+}
+
+/* จอเล็ก: ลดเงา/ระยะ */
+@media (max-width: 576px){
+  .about-hero{ padding: 28px 0 22px; }
+  .avatar-round{ width: 120px; height: 120px; }
+}
+/* ===== About Us (เพิ่มใหม่) ===== */
+.about-hero {
+  background: linear-gradient(180deg,#fff3e0 0%, #ffffff 100%);
+  border-radius: 0 0 16px 16px;
+  padding: 40px 0 32px;
+}
+.about-hero h1 {
+  font-family: 'Chonburi', cursive;
+  color: #8E372B;
+  font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.2rem);
+  margin-bottom: 6px;
+  text-indent: 0;
+}
+.about-hero p {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  text-indent: 0;
+}
+.about-card {
+  background: #fff;
+  border: 1.5px solid #cccccc;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.avatar-round {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8E372B;
+}
+.icon-mail {
+  color: #8E372B;
+  font-size: 1.2rem;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.social-links a {
+  font-size: 1.3rem;
+  color: #777;
+  transition: color 0.2s ease;
+}
+.social-links a:hover {
+  color: #8E372B;
+}
+@media (max-width: 576px) {
+  .about-hero { padding: 28px 0 22px; }
+  .avatar-round { width: 120px; height: 120px; }
+}
